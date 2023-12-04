@@ -36,6 +36,9 @@ createApp({
             }else{
                 return "text-decoration-none"
             }
+        },
+        removeTask(index){
+            todoList.splice(index,1)
         }
     }
 }) .mount('#app');
