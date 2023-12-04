@@ -50,7 +50,11 @@ createApp({
 
         getDone(index){
             console.log('fatto?')
-            this.todoList[index].done = true
+            if(this.todoList[index].done === false){
+                return this.todoList[index].done = true
+            }else{
+                return this.todoList[index].done = false
+            }   
         },
     }
 }) .mount('#app');
