@@ -9,3 +9,11 @@ table thead tr th:first-child{
 .bc-table{
     background-color: #e6a337;
 }
+
+tbody p {
+    line-height: 100%;
+}
+
+.line-through{
+    text-decoration-line: line-through;
+}
