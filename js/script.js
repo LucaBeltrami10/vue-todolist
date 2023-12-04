@@ -38,8 +38,13 @@ createApp({
                 return "text-decoration-none"
             }
         },
+
         removeTask(index){
             this.todoList.splice(index,1)
+        },
+        
+        addTask(){
+            this.todoList.push(newTask)
         },
     }
 }) .mount('#app');
