@@ -10,8 +10,8 @@ table thead tr th:first-child{
     background-color: #e6a337;
 }
 
-tbody p {
-    line-height: 100%;
+tbody th button i{
+    font-size: 0.7rem;
 }
 
 .line-through{

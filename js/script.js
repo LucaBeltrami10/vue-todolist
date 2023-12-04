@@ -16,6 +16,14 @@ createApp({
                     text : 'Prenotare viaggio',
                     done : true
                 },
+                {
+                    text : 'Imparare a cucinare',
+                    done : false
+                },
+                {
+                    text : 'Leggere 50 pagine',
+                    done : true
+                },
             ]
 
         }

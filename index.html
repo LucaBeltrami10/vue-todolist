@@ -34,19 +34,14 @@
                 </thead>
 
                 <tbody>
-                  <tr>
+                  <tr v-for="(task, index) in todoList">
                     <th scope="row" class="d-flex py-1">
-                        <button type="button" class="btn btn-light me-2"><i class="fa-solid fa-x"></i></button>
-                        <button type="button" class="btn btn-light"><i class="fa-solid fa-check"></i></button>
+                        <button type="button" class="btn btn-light my_button-list me-2"><i class="fa-solid fa-x"></i></button>
+                        <button type="button" class="btn btn-light my_button-list"><i class="fa-solid fa-check"></i></button>
                     </th>
                     <td class="">
-                        <p class="m-0">Prova</p>
-                    </td>
-                    
-                  </tr>
-                  <tr class="">
-                    <th scope="row">2</th>
-                    <td>Prova</td>
+                        <p class="m-0">{{task.text}}</p>
+                    </td> 
                   </tr>
                 </tbody>
               </table>
