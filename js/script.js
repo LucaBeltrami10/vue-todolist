@@ -46,6 +46,7 @@ createApp({
         
         addTask(){
             this.todoList.push({text : this.newTask, done: false})
+            this.newTask = '';
         },
 
         getDone(index){
