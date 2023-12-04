@@ -46,5 +46,9 @@ createApp({
         addTask(){
             this.todoList.push({text : this.newTask, done: false})
         },
+
+        getDone(index){
+            this.todoList[index].done = 'true'
+        },
     }
 }) .mount('#app');
