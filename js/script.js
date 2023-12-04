@@ -24,7 +24,8 @@ createApp({
                     text : 'Leggere 50 pagine',
                     done : true
                 },
-            ]
+            ],
+            newTask : '',
 
         }
     },
@@ -39,6 +40,6 @@ createApp({
         },
         removeTask(index){
             this.todoList.splice(index,1)
-        }
+        },
     }
 }) .mount('#app');
