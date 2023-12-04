@@ -30,6 +30,12 @@ createApp({
     },
 
     methods: {
-        
+        getLineThrough(index){
+            if(this.todoList[index].done === true){
+                return "text-decoration-line-through";
+            }else{
+                return "text-decoration-none"
+            }
+        }
     }
 }) .mount('#app');
