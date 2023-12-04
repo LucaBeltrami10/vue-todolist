@@ -32,6 +32,7 @@ createApp({
 
     methods: {
         getLineThrough(index){
+            console.log('funzione per testo sbarrato')
             if(this.todoList[index].done === true){
                 return "text-decoration-line-through";
             }else{
@@ -48,7 +49,8 @@ createApp({
         },
 
         getDone(index){
-            this.todoList[index].done = 'true'
+            console.log('fatto?')
+            this.todoList[index].done = true
         },
     }
 }) .mount('#app');
