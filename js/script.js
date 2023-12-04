@@ -30,6 +30,6 @@ createApp({
     },
 
     methods: {
-
+        
     }
 }) .mount('#app');
