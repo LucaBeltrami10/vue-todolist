@@ -21,7 +21,7 @@
                   <p class="p-0 m-0">Aumenta la tua produttività</p>
                 </div>
                 <div class="d-flex">
-                    <input v-model="newTask" class="w-100" type="text" id="new-task" name="new-task" placeholder="Inserisci un nuovo compito">
+                    <input v-model="newTask" @keyup.enter="addTask" class="w-100" type="text" id="new-task" name="new-task" placeholder="Inserisci un nuovo compito">
                     <button @click="addTask" type="button" class="btn btn-primary rounded-0">Aggiungi</button>
                 </div>
               </div>
@@ -39,8 +39,8 @@
                         <button @click="removeTask(index)" type="button" class="btn btn-light my_button-list me-2"><i class="fa-solid fa-x"></i></button>
                         <button @click="getDone(index), getLineThrough(index)" type="button" class="btn btn-light my_button-list"><i class="fa-solid fa-check"></i></button>
                     </th>
-                    <td class="">
-                        <p class="m-0" :class="getLineThrough(index)" >{{task.text}}</p>
+                    <td >
+                        <p class="m-0" @click="getDone(index), getLineThrough(index)" :class="getLineThrough(index)" >{{task.text}}</p>
                     </td> 
                   </tr>
                 </tbody>
