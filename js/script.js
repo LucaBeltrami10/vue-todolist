@@ -44,7 +44,7 @@ createApp({
         },
         
         addTask(){
-            this.todoList.push(newTask)
+            this.todoList.push({text : this.newTask, done: false})
         },
     }
 }) .mount('#app');
