@@ -1,0 +1,11 @@
+.my_container{
+    width: 600px;
+}
+
+table thead tr th:first-child{
+    width: 50px;
+}
+
+.bc-table{
+    background-color: #e6a337;
+}
