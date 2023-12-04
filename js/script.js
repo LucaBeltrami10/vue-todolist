@@ -32,7 +32,7 @@ createApp({
 
     methods: {
         getLineThrough(index){
-            console.log('funzione per testo sbarrato')
+            console.log('funzione che barra il testo in true')
             if(this.todoList[index].done === true){
                 return "text-decoration-line-through";
             }else{
@@ -50,7 +50,7 @@ createApp({
         },
 
         getDone(index){
-            console.log('fatto?')
+            console.log('funzione che cambia true/false')
             if(this.todoList[index].done === false){
                 return this.todoList[index].done = true
             }else{
