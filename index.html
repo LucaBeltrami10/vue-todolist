@@ -36,7 +36,7 @@
                 <tbody>
                   <tr v-for="(task, index) in todoList">
                     <th scope="row" class="d-flex py-1">
-                        <button type="button" class="btn btn-light my_button-list me-2"><i class="fa-solid fa-x"></i></button>
+                        <button @click="removeTask(index)" type="button" class="btn btn-light my_button-list me-2"><i class="fa-solid fa-x"></i></button>
                         <button type="button" class="btn btn-light my_button-list"><i class="fa-solid fa-check"></i></button>
                     </th>
                     <td class="">
