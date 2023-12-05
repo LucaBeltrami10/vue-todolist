@@ -40,7 +40,9 @@
                         <button @click="getDone(index)" type="button" class="btn btn-light my_button-list"><i class="fa-solid fa-check"></i></button>
                     </th>
                     <td >
-                        <p class="m-0" @click="getDone(index)" :class="getLineThrough(index)" >{{task.text}}</p>
+                        <!-- la classe barrata si può assegnare con un ternario: :class="todoList[index].done ? 'text-decoration-line-through' : 'text-decoration-none'";
+                        metodo utilizzato in precedenza (scritto per eventuale test in sostituzione) :class="getLineThrough(index)" -->
+                        <p class="m-0" @click="getDone(index)" :class="todoList[index].done ? 'text-decoration-line-through' : 'text-decoration-none'" >{{task.text}}</p>
                     </td> 
                   </tr>
                 </tbody>
